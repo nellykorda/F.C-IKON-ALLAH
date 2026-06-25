@@ -1,40 +1,368 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>F.C IKON ALLAH</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f4f4f4;
+}
+
+header{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+url('e9b29e1afce4c7cdae76239f259d3523.jpg');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.hero h1{
+font-size:70px;
+}
+
+.hero h2{
+margin-top:10px;
+font-size:28px;
+}
+
+.hero p{
+margin-top:15px;
+font-size:20px;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:15px 30px;
+background:#00aa44;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+}
+
+section{
+padding:70px 10%;
+}
+
+.title{
+text-align:center;
+margin-bottom:40px;
+color:#006400;
+font-size:40px;
+}
+
+.about{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+text-align:center;
+}
+
+.coach{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+text-align:center;
+}
+
+.coach img{
+width:180px;
+height:180px;
+border-radius:50%;
+object-fit:cover;
+}
+
+.players{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.card img{
+width:100%;
+height:280px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
+text-align:center;
+}
+
+.card-content h3{
+color:#006400;
+}
+
+.join{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+input,
+textarea,
+select{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:8px;
+}
+
+button{
+background:#006400;
+color:white;
+padding:12px 25px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+</style>
 </head>
+<body>
 
-<body bgcolor="#f5f5f5">
+<header>
 
-<center>
+<div class="hero">
 
-<img src="e9b29e1afce4c7cdae76239f259d3523.jpg" width="100%" alt="F.C IKON ALLAH">
-<h1>⚽ F.C IKON ALLAH ⚽</h1>
+<h1>⚽ F.C IKON ALLAH</h1>
 
 <h2>OPEN PLAYER RECRUITMENT</h2>
 
-<h3>Head Coach: Aminu Lagaxy</h3>
+<p>
+One Team • One Dream • One Goal
+</p>
 
-<hr width="80%">
+<a href="#join" class="btn">
+JOIN NOW
+</a>
 
-<h2>WELCOME TO F.C IKON ALLAH</h2>
+</div>
+
+</header>
+
+<section>
+
+<h2 class="title">About Us</h2>
+
+<div class="about">
 
 <p>
-We are looking for talented and dedicated football players
-to join our club. Whether you are a Goalkeeper, Defender,
-Midfielder, or Forward, we welcome you to apply.
+F.C IKON ALLAH is a football club dedicated to teamwork,
+discipline, respect, and success. We welcome passionate
+players who want to improve their skills and compete at
+the highest level.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Head Coach</h2>
+
+<div class="coach">
+
+<img src="coach.jpg" alt="Coach">
+
+<h2>Aminu Lagaxy</h2>
+
+<p>
+Head Coach of F.C IKON ALLAH
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Featured Players</h2>
+
+<div class="players">
+
+<div class="card">
+
+<img src="player1.jpg">
+
+<div class="card-content">
+
+<h3>Player Name</h3>
+
+<p>Forward</p>
+
+<p>#9</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="player2.jpg">
+
+<div class="card-content">
+
+<h3>Player Name</h3>
+
+<p>Midfielder</p>
+
+<p>#8</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="player3.jpg">
+
+<div class="card-content">
+
+<h3>Player Name</h3>
+
+<p>Defender</p>
+
+<p>#4</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="player4.jpg">
+
+<div class="card-content">
+
+<h3>Player Name</h3>
+
+<p>Goalkeeper</p>
+
+<p>#1</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="join">
+
+<h2 class="title">Apply To Join</h2>
+
+<div class="join">
+
+<form action="https://formsubmit.co/YOUR_EMAIL@example.com" method="POST">
+
+<input
+type="text"
+name="name"
+placeholder="Full Name"
+required>
+
+<input
+type="number"
+name="age"
+placeholder="Age"
+required>
+
+<input
+type="email"
+name="email"
+placeholder="Email Address"
+required>
+
+<input
+type="tel"
+name="phone"
+placeholder="Phone Number"
+required>
+
+<select name="position">
+
+<option>Goalkeeper</option>
+
+<option>Defender</option>
+
+<option>Midfielder</option>
+
+<option>Forward</option>
+
+</select>
+
+<textarea
+name="experience"
+rows="5"
+placeholder="Tell us about your football experience">
+</textarea>
+
+<button type="submit">
+
+SUBMIT APPLICATION
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>F.C IKON ALLAH</h2>
+
+<p>
+Head Coach: Aminu Lagaxy
 </p>
 
 <p>
-Our goal is to build a strong team based on discipline,
-teamwork, respect, and passion for football.
+© 2026 All Rights Reserved
 </p>
 
-<hr width="80%">
+</footer>
 
-<h2>WHY JOIN US?</h2>
-
-<table border="1" cellpadding="10">
+</body>
+</html><table border="1" cellpadding="10">
 <tr>
 <td>✓ Professional Coaching</td>
 </tr>
